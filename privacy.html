@@ -14,6 +14,7 @@
   <style>
     :root {
       color-scheme: dark;
+
       --bg: #0b0610;
       --panel: #160a20;
       --text: #f7f3fa;
@@ -21,32 +22,120 @@
       --accent: #ff3b9d;
       --border: rgba(255, 255, 255, 0.08);
     }
-    * { box-sizing: border-box; }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
       background:
-        radial-gradient(circle at top, rgba(116, 37, 95, 0.22), transparent 35%),
-        linear-gradient(180deg, #12071f 0%, var(--bg) 100%);
+        radial-gradient(
+          circle at top,
+          rgba(116, 37, 95, 0.22),
+          transparent 35%
+        ),
+        linear-gradient(
+          180deg,
+          #12071f 0%,
+          var(--bg) 100%
+        );
+
       color: var(--text);
       line-height: 1.65;
     }
-    main { width: min(860px, calc(100% - 32px)); margin: 0 auto; padding: 64px 0 96px; }
-    .brand { font-size: 14px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 18px; }
-    h1 { font-size: clamp(36px, 6vw, 58px); line-height: 1.05; margin: 0 0 14px; letter-spacing: -0.03em; }
-    .meta { color: var(--muted); margin-bottom: 40px; }
-    .card { background: rgba(22, 10, 32, 0.82); border: 1px solid var(--border); border-radius: 24px; padding: 28px; backdrop-filter: blur(10px); }
-    section + section { margin-top: 34px; }
-    h2 { font-size: 22px; margin: 0 0 12px; }
-    p { margin: 0 0 14px; }
-    ul { margin: 10px 0 0 22px; padding: 0; }
-    li + li { margin-top: 8px; }
-    a { color: #ff7cc0; }
-    .contact { margin-top: 42px; padding-top: 26px; border-top: 1px solid var(--border); }
-    .footer { margin-top: 34px; color: var(--muted); font-size: 14px; }
+
+    main {
+      width: min(860px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 64px 0 96px;
+    }
+
+    .brand {
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.05;
+      margin: 0 0 14px;
+      letter-spacing: -0.03em;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: rgba(22, 10, 32, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 28px;
+      backdrop-filter: blur(10px);
+    }
+
+    section + section {
+      margin-top: 34px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin: 0 0 12px;
+    }
+
+    p {
+      margin: 0 0 14px;
+    }
+
+    ul {
+      margin: 10px 0 0 22px;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: #ff7cc0;
+    }
+
+    .contact {
+      margin-top: 42px;
+      padding-top: 26px;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer {
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
     @media (max-width: 640px) {
-      main { padding-top: 36px; }
-      .card { padding: 22px; border-radius: 20px; }
+      main {
+        padding-top: 36px;
+      }
+
+      .card {
+        padding: 22px;
+        border-radius: 20px;
+      }
     }
   </style>
 </head>
@@ -54,37 +143,55 @@
 <body>
   <main>
     <div class="brand">Couple Games</div>
+
     <h1>Privacy Policy</h1>
-    <div class="meta">Last updated: September 16, 2026</div>
+
+    <div class="meta">
+      Last updated: September 16, 2026
+    </div>
 
     <div class="card">
+
       <section>
         <h2>1. Who We Are</h2>
+
         <p>
           This Privacy Policy applies to the Couple Games mobile application
           (the “App”), including renamed, updated, or successor versions of the
           App operated by the applicable publisher or developer.
         </p>
+
         <p>
           For the Android version distributed through Google Play, the App is
           published by <strong>Blue Angle Studios</strong>.
         </p>
+
         <p>
           For the iOS version distributed through the Apple App Store, the
           applicable publisher is identified in the App Store listing.
         </p>
+
         <p>
           Privacy questions can be sent to:
-          <a href="mailto:blueanglestudios@gmail.com">blueanglestudios@gmail.com</a>.
+          <a href="mailto:blueanglestudios@gmail.com">
+            blueanglestudios@gmail.com
+          </a>.
         </p>
       </section>
 
       <section>
         <h2>2. Information We Process</h2>
-        <p>Couple Games does not require users to create an account.</p>
-        <p>We do not ask you to provide personal information such as:</p>
+
+        <p>
+          Couple Games does not require users to create an account.
+        </p>
+
+        <p>
+          We do not ask users to provide personal information such as:
+        </p>
+
         <ul>
-          <li>your real name;</li>
+          <li>real name;</li>
           <li>email address;</li>
           <li>phone number;</li>
           <li>precise location;</li>
@@ -93,25 +200,32 @@
           <li>messages;</li>
           <li>user-generated content.</li>
         </ul>
+
         <p>
-          Player names, gameplay preferences, settings, and game state are stored
-          locally on your device and are not used by us for advertising or
-          behavioral profiling.
+          Player names, gameplay preferences, settings, and game state are
+          stored locally on the device and are not used by us for advertising
+          or behavioral profiling.
         </p>
+
         <p>
           Limited technical, purchase, and subscription-related information is
-          processed through third-party services that are necessary to provide
-          purchases and subscription functionality, as described below.
+          processed through third-party services necessary to provide purchases
+          and subscription functionality, as described below.
         </p>
       </section>
 
       <section>
         <h2>3. Local Gameplay Data</h2>
+
         <p>
           Information used for gameplay is entered or generated directly within
-          the App and is stored locally on the device.
+          the App and stored locally on the device.
         </p>
-        <p>This may include:</p>
+
+        <p>
+          This may include:
+        </p>
+
         <ul>
           <li>player names;</li>
           <li>game preferences;</li>
@@ -119,112 +233,153 @@
           <li>game state or progress;</li>
           <li>other locally stored configuration data.</li>
         </ul>
+
         <p>
-          We do not currently maintain user accounts or a server-side gameplay database.
+          We do not currently maintain user accounts or a server-side gameplay
+          database.
         </p>
+
         <p>
-          Deleting the App or clearing its stored data through your device settings
+          Deleting the App or clearing its stored data through device settings
           may remove locally stored gameplay information.
         </p>
       </section>
 
       <section>
         <h2>4. Purchases and Subscriptions</h2>
+
         <p>
-          Couple Games may offer subscriptions, free trials, introductory offers,
-          or other in-app purchases.
+          Couple Games may offer subscriptions, free trials, introductory
+          offers, or other in-app purchases.
         </p>
+
         <p>
           Payments are processed by the platform through which the App is
           distributed, such as Google Play or the Apple App Store.
         </p>
+
         <p>
-          We do not directly receive or store your full payment-card or banking information.
+          We do not directly receive or store full payment-card or banking
+          information.
         </p>
+
         <p>
-          Google and Apple may independently process account, device, transaction,
-          purchase, subscription, and related information under their own privacy
-          policies and terms.
+          Google and Apple may independently process account, device,
+          transaction, purchase, subscription, and related information under
+          their own privacy policies and terms.
         </p>
       </section>
 
       <section>
         <h2>5. Adapty</h2>
+
         <p>
           We use <strong>Adapty</strong> as a subscription-management and
           subscription-analytics service.
         </p>
+
         <p>
           Adapty helps the App retrieve subscription information, determine
           premium-access status, synchronize purchase and subscription status,
-          restore eligible purchases, and provide subscription and revenue analytics.
+          restore eligible purchases, and provide subscription and revenue
+          analytics.
         </p>
+
         <p>
-          When the Adapty SDK is activated, Adapty creates an internal profile for
-          the App installation. Because Couple Games does not use user accounts or
-          its own authentication system, we do not provide Adapty with a customer
-          user ID that identifies you through a Couple Games account. The resulting
-          Adapty profile is therefore anonymous from our perspective.
+          When the Adapty SDK is activated, Adapty creates an internal profile
+          for the App installation. Because Couple Games does not use user
+          accounts or its own authentication system, we do not provide Adapty
+          with a Couple Games customer user ID. The Adapty profile is therefore
+          not linked by us to a Couple Games account identity.
         </p>
+
         <p>
-          Depending on your subscription activity and platform, information
-          processed through Adapty may include:
+          Depending on subscription activity and platform, information processed
+          through Adapty may include:
         </p>
+
         <ul>
           <li>an Adapty profile identifier;</li>
           <li>device or app-installation identifiers;</li>
           <li>product and transaction identifiers;</li>
           <li>purchase history;</li>
           <li>subscription status;</li>
-          <li>trial, renewal, cancellation, expiration, billing, or refund events;</li>
+          <li>
+            trial, renewal, cancellation, expiration, billing, or refund events;
+          </li>
           <li>store and product information;</li>
           <li>price, currency, and revenue-related information;</li>
           <li>limited technical information required to provide the service.</li>
         </ul>
+
         <p>
-          We configure the Adapty SDK to disable collection and sharing of the
-          Android Advertising ID, Apple's IDFA, and the user's IP address through
+          We configure the Adapty SDK to disable Android Advertising ID
+          collection, Apple IDFA collection, and IP-address collection through
           Adapty's SDK data-collection settings.
         </p>
+
         <p>
-          We do not intentionally send player names, gameplay answers, game prompts,
-          challenge history, or other gameplay content to Adapty.
+          We do not intentionally send player names, gameplay answers, game
+          prompts, challenge history, or other gameplay content to Adapty.
         </p>
+
         <p>
           You can learn more about Adapty's privacy practices at
-          <a href="https://adapty.io/privacy/" rel="noopener noreferrer">adapty.io/privacy</a>.
+          <a
+            href="https://adapty.io/privacy/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            adapty.io/privacy
+          </a>.
         </p>
       </section>
 
       <section>
         <h2>6. How We Use Information</h2>
-        <p>Locally stored gameplay information is used to provide App functionality, including:</p>
+
+        <p>
+          Locally stored gameplay information is used to provide App
+          functionality, including:
+        </p>
+
         <ul>
           <li>displaying player names;</li>
           <li>remembering preferences and settings;</li>
           <li>maintaining game state;</li>
           <li>providing the selected game experience.</li>
         </ul>
-        <p>Subscription-related information processed through Adapty is used to:</p>
+
+        <p>
+          Subscription-related information processed through Adapty is used to:
+        </p>
+
         <ul>
           <li>provide and maintain premium access;</li>
-          <li>determine subscription and entitlement status;</li>
+          <li>determine subscription and entitlement/access status;</li>
           <li>process and synchronize purchase-related events;</li>
           <li>restore eligible purchases;</li>
           <li>understand subscription performance;</li>
-          <li>measure subscription conversions, trials, renewals, cancellations, refunds, revenue, and related subscription metrics.</li>
+          <li>
+            measure subscription conversions, trials, renewals, cancellations,
+            refunds, revenue, and related subscription metrics.
+          </li>
         </ul>
       </section>
 
       <section>
         <h2>7. Advertising and Tracking</h2>
+
         <p>
           Couple Games does not currently contain third-party advertising SDKs
           and does not display third-party advertising.
         </p>
+
         <p>
-          We configure Adapty not to collect the Android Advertising ID or Apple's IDFA.
+          We configure Adapty not to collect Android Advertising ID or Apple
+          IDFA.
         </p>
+
         <p>
           We do not sell personal information or share personal information for
           cross-context behavioral advertising.
@@ -233,167 +388,230 @@
 
       <section>
         <h2>8. Analytics, Crash Reporting and Push Notifications</h2>
+
         <p>
           Couple Games does not currently use a general-purpose behavioral or
           gameplay analytics SDK to track how users play the games.
         </p>
+
         <p>
-          Adapty is used specifically for subscription management and subscription
-          analytics. Subscription-related events and technical identifiers associated
-          with an Adapty profile may therefore be processed for subscription analytics.
+          Adapty is used specifically for subscription management and
+          subscription analytics. Subscription-related events and technical
+          identifiers associated with an Adapty profile may therefore be
+          processed for subscription analytics.
         </p>
+
         <p>
-          The current version of Couple Games does not use a third-party crash-reporting
-          SDK or a third-party push-notification service.
+          The current version of Couple Games does not use a third-party
+          crash-reporting SDK or a third-party push-notification service.
         </p>
+
         <p>
-          If these practices change, we will update this Privacy Policy as appropriate.
+          If these practices change, the Privacy Policy will be updated as
+          appropriate.
         </p>
       </section>
 
       <section>
         <h2>9. Third-Party Services</h2>
+
         <p>
-          The App may rely on third-party services necessary to distribute the App
-          and provide purchase or subscription functionality.
+          The App may rely on third-party services necessary to distribute the
+          App and provide purchase or subscription functionality.
         </p>
-        <p>These services currently include:</p>
+
+        <p>
+          These services currently include:
+        </p>
+
         <ul>
           <li>Google Play, for Android distribution and purchases;</li>
           <li>Apple App Store, for iOS distribution and purchases;</li>
-          <li>Adapty, for subscription management, purchase-status synchronization, access status, purchase restoration, and subscription analytics.</li>
+          <li>
+            Adapty, for subscription management, purchase-status
+            synchronization, access/entitlement status, purchase restoration,
+            and subscription analytics.
+          </li>
         </ul>
+
         <p>
-          These providers may process information under their own privacy policies
-          and legal obligations.
+          These providers may process information under their own privacy
+          policies and legal obligations.
         </p>
       </section>
 
       <section>
         <h2>10. Legal Bases for Processing</h2>
+
         <p>
-          Where applicable data-protection law requires a legal basis for processing,
-          we may rely on:
+          Where applicable data-protection law requires a legal basis for
+          processing, we may rely on:
         </p>
+
         <ul>
-          <li>performance of a contract, where processing is necessary to provide purchased or subscribed App functionality;</li>
-          <li>legitimate interests, including operating, securing, maintaining, and understanding the performance of the App and its subscription system;</li>
-          <li>compliance with legal obligations, including applicable accounting, consumer-protection, tax, or regulatory requirements;</li>
-          <li>consent, where consent is specifically required by applicable law.</li>
+          <li>
+            performance of a contract, where processing is necessary to provide
+            purchased or subscribed App functionality;
+          </li>
+          <li>
+            legitimate interests, including operating, securing, maintaining,
+            and understanding the performance of the App and its subscription
+            system;
+          </li>
+          <li>
+            compliance with legal obligations, including applicable accounting,
+            consumer-protection, tax, or regulatory requirements;
+          </li>
+          <li>
+            consent, where consent is specifically required by applicable law.
+          </li>
         </ul>
       </section>
 
       <section>
         <h2>11. Data Retention and Deletion</h2>
+
         <p>
-          Gameplay information stored locally remains on your device until it is
-          removed by you, overwritten by the App, or removed when the App's data is
-          cleared or the App is deleted.
+          Gameplay information stored locally remains on the device until it is
+          removed by the user, overwritten by the App, or removed when the App's
+          data is cleared or the App is deleted.
         </p>
+
         <p>
-          Subscription and transaction-related information processed by app stores or
-          Adapty may be retained for periods necessary to provide subscription
-          functionality, maintain purchase and entitlement records, provide subscription
-          analytics, resolve billing or technical issues, prevent misuse, or comply with
-          legal obligations.
+          Subscription and transaction-related information processed by app
+          stores or Adapty may be retained for periods necessary to provide
+          subscription functionality, maintain purchase and entitlement records,
+          provide subscription analytics, resolve billing or technical issues,
+          prevent misuse, or comply with legal obligations.
         </p>
+
         <p>
-          Retention periods may vary depending on the type of information, provider
-          requirements, and applicable law.
+          Retention periods may vary depending on the type of information,
+          provider requirements, and applicable law.
         </p>
       </section>
 
       <section>
         <h2>12. Your Privacy Choices and Rights</h2>
+
         <p>
-          Depending on where you live, you may have legal rights regarding information
-          relating to you, including rights to request access, correction, deletion,
-          restriction, portability, objection, or information about how data is processed.
+          Depending on where you live, you may have legal rights regarding
+          information relating to you, including rights to request access,
+          correction, deletion, restriction, portability, objection, or
+          information about how data is processed.
         </p>
+
         <p>
-          You may contact us at:
-          <a href="mailto:blueanglestudios@gmail.com">blueanglestudios@gmail.com</a>
-          with a privacy-related request.
+          Privacy requests may be sent to:
+          <a href="mailto:blueanglestudios@gmail.com">
+            blueanglestudios@gmail.com
+          </a>.
         </p>
+
         <p>
-          Because Couple Games does not maintain user accounts and Adapty profiles are
-          not linked by us to a Couple Games account identity, we may need additional
-          information, such as relevant purchase or transaction information, to determine
-          whether we can locate a particular subscription profile.
+          Because Couple Games does not maintain user accounts and Adapty
+          profiles are not linked by us to a Couple Games account identity,
+          additional information, such as relevant purchase or transaction
+          information, may be necessary to determine whether a particular
+          subscription profile can be located.
         </p>
+
         <p>
-          Where information is stored only locally on your device, you can generally
-          remove it by deleting the App or clearing its stored data.
+          Where information is stored only locally on the device, users can
+          generally remove it by deleting the App or clearing its stored data.
         </p>
+
         <p>
-          You may also manage or cancel subscriptions directly through the applicable
+          Subscriptions can be managed or cancelled through the applicable
           Google Play or Apple account settings.
         </p>
       </section>
 
       <section>
         <h2>13. Children's Privacy</h2>
+
         <p>
-          Couple Games is intended for a mature audience and is not designed for children.
+          Couple Games is intended for a mature audience and is not designed for
+          children.
         </p>
+
         <p>
-          Some game modes may contain romantic, intimate, suggestive, personal, or other mature themes.
+          Some game modes may contain romantic, intimate, suggestive, personal,
+          or other mature themes.
         </p>
+
         <p>
-          We do not knowingly seek to collect personal information from children.
+          We do not knowingly seek to collect personal information from
+          children.
         </p>
+
         <p>
-          Users should comply with the minimum age requirements and content rating
-          applicable to the App in their country, region, and app store.
+          Users should comply with the minimum age requirements and content
+          rating applicable to the App in their country, region, and app store.
         </p>
       </section>
 
       <section>
         <h2>14. Security and International Processing</h2>
+
         <p>
-          We follow a data-minimization approach and design gameplay functionality so
-          that gameplay information can remain on the user's device.
+          We follow a data-minimization approach and design gameplay functionality
+          so that gameplay information can remain on the user's device.
         </p>
+
         <p>
-          Third-party service providers may process information in countries other than
-          the country in which you live. Their own security, retention, and
-          international-transfer practices also apply.
+          Third-party service providers may process information in countries
+          other than the country in which the user lives. Their own security,
+          retention, and international-transfer practices also apply.
         </p>
+
         <p>
           Where required by applicable law, international transfers of personal
           information must be supported by an appropriate legal mechanism.
         </p>
+
         <p>
-          No electronic storage or transmission method can be guaranteed to be completely secure.
+          No electronic storage or transmission method can be guaranteed to be
+          completely secure.
         </p>
       </section>
 
       <section>
         <h2>15. Changes to This Privacy Policy</h2>
+
         <p>
-          We may update this Privacy Policy to reflect changes to the App, our data
-          practices, subscription infrastructure, third-party services, platform
-          requirements, or applicable law.
+          We may update this Privacy Policy to reflect changes to the App, our
+          data practices, subscription infrastructure, third-party services,
+          platform requirements, or applicable law.
         </p>
+
         <p>
-          The latest version will be published on this page with an updated “Last updated” date.
+          The latest version will be published with an updated “Last updated”
+          date.
         </p>
       </section>
 
       <section class="contact">
         <h2>16. Contact Us</h2>
+
         <p>
-          If you have questions about this Privacy Policy or the privacy practices of
-          Couple Games, contact:
+          If users have questions about this Privacy Policy or the privacy
+          practices of Couple Games, contact:
         </p>
+
         <p>
           <strong>Couple Games Privacy Contact</strong><br />
-          <a href="mailto:blueanglestudios@gmail.com">blueanglestudios@gmail.com</a>
+          <a href="mailto:blueanglestudios@gmail.com">
+            blueanglestudios@gmail.com
+          </a>
         </p>
       </section>
+
     </div>
 
-    <div class="footer">© 2026 Couple Games</div>
+    <div class="footer">
+      © 2026 Couple Games
+    </div>
   </main>
 </body>
 </html>
